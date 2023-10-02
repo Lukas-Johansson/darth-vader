@@ -54,13 +54,26 @@ function App() {
       <h1>Darth Väder</h1>
       {weatherData.main ? (
         <>
-        <h2>City: {weatherData.name}</h2>
-        <h2>Temperaturer: {(weatherData.main.temp -273.15).toFixed(0)}°C</h2>
-        <h2>Väder: {weatherData.weather[0].description}</h2>
-        <h2>Vindhastighet: {weatherData.wind.speed} m/s</h2>
-        <h2>Luftfuktighet: {weatherData.main.humidity}%</h2>
-        <h2>Lufttryck: {weatherData.main.pressure} hPa</h2>
-
+          <div className='informationsamling'>
+            <div className='information'>
+              <h2>City: {weatherData.name}</h2>
+            </div>
+            <div className='information'>
+              <h2>Temperaturer: {(weatherData.main.temp - 273.15).toFixed(0)}°C</h2>
+            </div>
+            <div className='information'>
+              <h2>Väder: {weatherData.weather[0].description}</h2>
+            </div>
+            <div className='information'>
+              <h2>Vindhastighet: {weatherData.wind.speed} m/s</h2>
+            </div>
+            <div className='information'>
+              <h2>Luftfuktighet: {weatherData.main.humidity}%</h2>
+            </div>
+            <div className='information'>
+              <h2>Lufttryck: {weatherData.main.pressure} hPa</h2>
+            </div>
+          </div>
         </>
       ) : (
         <Spinner />

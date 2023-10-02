@@ -40,3 +40,23 @@
 .read-the-docs {
   color: #888;
 }
+
+.informationsamling {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.information {
+  display: flex;
+  margin: 10px;
+  padding: 2em;
+  border: 1px solid #FFE81F;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: #FFE81F;
+  text-align: left;
+  line-height: 1.5;
+}
+
